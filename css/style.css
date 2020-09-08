@@ -874,10 +874,24 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .label-policy-text {
+  display: flex;
+  align-items: center;
   line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--main-color);
 }
+
+.policy-link {
+  color: var(--accent-color);
+  margin-left: 3px;
+}
+
+.modal .button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Чекбокс через svg спрайт в html документе */
 
 .label-policy-check {
   display: flex;
@@ -891,16 +905,31 @@ color: var(--main-color);
   transition: background-color var(--time-transition) var(--function-time), border-color var(--time-transition) var(--function-time);
 }
 
-.policy-link {
-  color: var(--accent-color);
-}
-
 .policy-check-input:checked ~ .label-policy-check {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
-.modal .button {
-  display: block;
-  margin: 0 auto;
+/* ========================= */
+
+
+/* Чекбокс через псевдоэлемент */
+
+/* .policy-check-input:checked ~ .label-policy-text::before{
+  background-image: url(../image/Vector.svg), linear-gradient(var(--accent-color), var(--accent-color));
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: var(--accent-color);
 }
+
+.label-policy-text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--title-color);
+  border-radius: 2px;
+  margin-right: 7px;
+} */
+
+/* ========================= */
