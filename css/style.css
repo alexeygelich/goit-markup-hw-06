@@ -878,16 +878,19 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .label-policy-text {
-  display: flex;
-  align-items: center;
+display: flex;
   line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--main-color);
 }
 
 .policy-link {
+  display: block;
+    height: 19px;
   color: var(--accent-color);
   margin-left: 3px;
+  border-bottom: 1px solid var(--accent-color);
+    text-decoration: none;
 }
 
 .modal .button {
