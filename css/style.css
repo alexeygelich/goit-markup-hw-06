@@ -763,6 +763,7 @@ transition: transform var(--time-transition) var(--function-time), opacity var(-
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   top: 8px;
   right: 8px;
   width: 30px;
